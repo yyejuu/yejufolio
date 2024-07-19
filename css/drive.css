@@ -1,0 +1,446 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Gugi&family=Jua&family=Marck+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&family=Aldrich&display&family=Noto+Sans+KR:wght@100..900&family=Play:wght@400;700&family=Racing+Sans+One&display=swap');
+
+html {
+  background-color: #DDFBFF;
+  color: #000;
+  font-family: "Play", sans-serif;
+  position: relative;
+}
+
+.fixed {
+  width: 100px;
+  height: 100px;
+  background-color: #FFB2C8;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;
+  position: fixed;
+  right: 100px;
+  top: 800px;
+  z-index: 1;
+}
+
+.fixed:hover {
+  background-color: #ee4577;
+  width: 180px;
+  border-radius: 10%;
+}
+
+.fixed:hover p {
+  display: none;
+}
+
+.fixed:hover a {
+  display: block;
+}
+
+.fixed p {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.fixed a {
+  display: none;
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+
+header {
+  background-color: #FFB2C8;
+  color: #FFF;
+}
+
+header h1:hover a {
+  color: #000;
+}
+
+header nav ul li:first-child {
+  color: #d1134c;
+}
+
+header nav ul li:hover a {
+  color: #ff5d8b;
+}
+
+main>section {
+  padding-top: 80px;
+  width: 100%;
+}
+
+main>section h2 {
+  font-family: "Racing Sans One";
+  font-size: 60px;
+  text-decoration-line: underline;
+  text-align: center;
+}
+
+main .page {
+  height: 870px;
+  background-image: url(../img/drpage_bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+main .page h2 {
+  margin-top: 120px;
+  color: #000000;
+}
+
+main .page p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 25px;
+  line-height: 1.5;
+  font-family: "Noto Sans KR";
+  color: #424242;
+}
+
+main .page p>span {
+  font-family: "Racing Sans One";
+}
+
+main .page p b {
+  color: #cf6986;
+}
+
+main .page p em {
+  font-weight: bold;
+  color: #d1134c;
+  font-size: 22px;
+}
+
+main .page p:nth-child(3) {
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-family: "Play", sans-serif;
+  transition: .6s;
+}
+
+main .page p:nth-child(3)>i {
+  font-size: 25px;
+  margin-top: -8px;
+}
+
+main .yekki_ani {
+  width: 309px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  animation: yekkiA 10s linear infinite;
+}
+
+main .yekki_ani p {
+  font-size: 16px;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid #ff9143;
+  border-radius: 20px;
+  display: none;
+}
+
+main .yekki_ani p em {
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+main .yekki_ani:hover {
+  animation-play-state: paused;
+}
+
+main .yekki_ani:hover p {
+  display: flex;
+}
+
+@keyframes yekkiA {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+main .cha {
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url(../img/cha_bg.png);
+  background-repeat: no-repeat;
+}
+
+main .cha h2 {}
+
+main .cha .bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+main .cha .bg>img {
+  width: 100%;
+  height: 100%;
+}
+
+main .cha .yekki {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .cha .yekki .yekki_r {
+  width: 625px;
+  height: 625px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .cha .yekki img:first-child {
+  width: 517px;
+  height: 322px;
+  object-fit: cover;
+}
+
+main .cha .yekki img:nth-child(2) {
+  position: absolute;
+  left: 420px;
+  top: 360px;
+}
+
+main .cha .yekki img:nth-child(3) {
+  position: absolute;
+}
+
+main .cha .yekki .txt {
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .cha .yekki .txt h3 {
+  font-family: "Racing Sans One";
+  font-size: 30px;
+  line-height: 1;
+}
+
+main .cha .yekki .txt h3>span {
+  font-family: "Noto Sans KR";
+  font-size: 18px;
+}
+
+main .cha .yekki b {
+  font-family: "Noto Sans KR";
+  font-size: 23px;
+  line-height: 2;
+  font-weight: bold;
+}
+
+main .cha .yekki .txt p {
+  font-family: "Noto Sans KR";
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+main .cha .yekki .txt ul.color {
+  width: 540px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .cha .yekki .txt ul.color li {
+  width: 100px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* padding: 19px 33px 20px 34px; */
+  border-radius: 20px;
+  color: #000;
+  font-family: "Racing Sans One";
+  font-size: 16px;
+}
+
+main .cha .yekki .txt ul.color li:nth-child(1) {
+  background-color: #fff;
+  border: 1px solid #dddddd;
+}
+
+main .cha .yekki .txt ul.color li:nth-child(2) {
+  background-color: #F7D7DC;
+}
+
+main .cha .yekki .txt ul.color li:nth-child(3) {
+  background-color: #FFB6B4;
+}
+
+main .cha .yekki .txt ul.color li:nth-child(4) {
+  background-color: #E9ADAC;
+}
+
+main .cha .yekki .txt ul.color li:nth-child(5) {
+  background-color: #D4736F;
+}
+
+main .ps {
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #242424;
+}
+
+main .ps h2 {
+  color: #FFF;
+}
+
+main .ps .container {
+  width: 1200px;
+  height: 650px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #000;
+  background-image: url(../img/persona_bg.png);
+  background-repeat: no-repeat;
+  background-size: 1200px 650px;
+  object-fit: cover;
+}
+
+main .ps h3 {
+  color: #000000;
+  font-family: Play;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 8px;
+}
+
+main .ps .per {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .ps .joa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+}
+
+main .ps .joa .txt {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+main .ps .joa .txt b {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+main .ps .sto p span {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+main .ps .sto p em {
+  font-family: "Racing Sans One";
+  font-size: 22px;
+  text-decoration-line: underline;
+  color: #ff9143;
+}
+
+main .ps p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 1;
+  font-family: "Noto Sans KR";
+  color: #040404;
+}
+
+main .design {
+  height: 2841px;
+  color: #fff;
+  background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main .design ul {
+  width: 1810px;
+  height: 2112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main .design ul li {}
+
+main .design ul li:first-child {
+  width: 1810px;
+  height: 802px;
+  background-image: url(../img/drive_de1.png);
+}
+
+main .design ul li:last-child {
+  width: 1790px;
+  height: 1135px;
+  background-image: url(../img/drive_de2.png);
+}
+
+main .design .go a {
+  width: 337px;
+  height: 120px;
+  border-radius: 50px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Racing Sans One";
+  font-size: 60px;
+  color: #fff;
+  transition: .6s;
+}
+
+main .design .go:hover a {
+  background-color: #cf6986;
+}
+
+footer {
+  background-color: #242424;
+}
+
+footer p {
+  color: #a5a5a5;
+}
+
+footer p span {
+  color: #fff;
+}
