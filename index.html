@@ -4,446 +4,369 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
+  <title>touslesjours</title>
   <script src="https://kit.fontawesome.com/b806d5492f.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="js/script.js"></script>
-  <link rel="icon" href="img/favicon.ico">
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/index.js"></script>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/fixed.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1>
-      <a target="_blank" href="#T">
-        YEJUFOLIO
-      </a>
-    </h1>
-    <nav>
-      <ul class="gnb">
-        <li><a href="#P">Profile</a></li>
-        <li><a href="#A">A. Publishing</a>
-          <ul class="sub">
-            <li><a href="#A">TOUSlesJOURS</a></li>
-            <li><a href="#A">F:L</a></li>
-            <li><a href="#A">문화빛담</a></li>
-            <li><a href="#A">DRIVE RABBIT</a></li>
-          </ul>
-        </li>
-        <li><a href="#B">B. UIUX</a></li>
-        <li><a href="#C">C. Clone Coding</a></li>
-        <li><a href="#D">D. Contact</a></li>
-      </ul>
-    </nav>
+  <div class="fixed">
+    <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+  </div>
+
+  <header id="top">
+    <div class="con">
+      <h1><a href="#"></a></h1>
+      <nav>
+        <ul class="gnb">
+          <li><a href="#">New Arrival</a></li>
+          <li><a href="#">Menu</a>
+            <ul class="sub">
+              <li><a href="#">빵</a></li>
+              <li><a href="#">케이크</a></li>
+              <li><a href="#">델리</a></li>
+              <li><a href="#">디저트/스낵</a></li>
+              <li><a href="#">음료</a></li>
+              <li><a href="#">선물</a></li>
+            </ul><!-- //.sub -->
+          </li>
+          <li><a href="#">Event</a>
+            <ul class="sub">
+              <li><a href="#">프로모션</a></li>
+              <li><a href="#">이벤트당첨 조회</a></li>
+              <li><a href="#">제휴 혜택</a></li>
+              <li><a href="#">멤버십</a></li>
+            </ul><!-- //.sub -->
+          </li>
+          <li><a href="#">Brand Story</a>
+            <ul class="sub">
+              <li><a href="#">브랜드 스토리</a></li>
+              <li><a href="#">뚜레쥬르 광고</a></li>
+              <li><a href="#">뚜레쥬르 재료이야기</a></li>
+              <li><a href="#">뉴스/공지사항</a></li>
+            </ul><!-- //.sub -->
+          </li>
+          <li><a href="#">Store</a>
+            <ul class="sub">
+              <li><a href="#">매장 찾기</a></li>
+              <li><a href="#">NEW 뚜레쥬르</a></li>
+              <li><a href="#">뚜레쥬르 라뜰리에</a></li>
+              <li><a href="#">글로벌 뚜레쥬르</a></li>
+              <li><a href="#">창업 안내</a></li>
+            </ul><!-- //.sub -->
+          </li>
+        </ul><!-- //.gnb -->
+      </nav>
+      <ul class="icon">
+        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-bars-staggered"></i></a></li>
+      </ul><!-- //.icon -->
+    </div><!-- //.con -->
   </header>
 
   <main>
-    <section class="page" id="T">
-      <div class="middle">
-        <div class="logo">
-          <img src="img/main_rabbit.png" alt="">
-          <div class="sunguri"><img src="img/main_sunguri.png" alt=""></div>
-        </div>
-        <a target="_blank"
-          href="https://www.figma.com/proto/VRnR8JE4P856sH943JBQ9j/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?page-id=119%3A426&node-id=212-161&viewport=1038%2C888%2C0.16&t=i2UYTVeo8zubcfbf-1&scaling=min-zoom&content-scaling=fixed">
-          <h2>YEJUFOLIO</h2>
-        </a>
-        <p><a href="#P">SCROLL <i class="fa-solid fa-caret-down"></i></a></p>
-      </div>
-    </section><!-- //.page -->
-
-    <section class="profile" id="P">
-      <ul>
-        <li class="top">
-          <ul>
-            <li>
-              <div class="img_box"></div>
-            </li>
-
-            <li class="left">
-              <ul>
-                <li>
-                  <h2>ABOUT<span>YEJU</span></h2>
-                </li>
-                <li><img src="img/rabbit.png" alt="">
-                  <p><em>강예주</em> <br>1999.03.25 (26y)</p>
-                </li>
-                <li><i class="fa-solid fa-desktop"></i>
-                  <p>이젠아카데미<br>
-                    UIUX 피그마&프론트엔드 과정 수료 (2024) </p>
-                </li>
-                <li><i class="fa-solid fa-id-card"></i>
-                  <p>웹디자인기능사 자격증 (2024) <br>
-                    운전면허증 1종 보통
-                  </p>
-                </li>
-                <li><i class="fa-solid fa-graduation-cap"></i>
-                  <p>패션디자인학과 졸업 (2024)</p>
-                </li>
-              </ul>
-            </li><!-- //.left -->
-
-            <li class="right">
-              <ul>
-                <li>
-                  <h2>MY COLOR</h2>
-                </li>
-                <li>
-                  <div class="color_box"></div>
-                  <div class="txt">
-                    <h3>깔끔한 화이트</h3>
-                    <p>깔끔하게 실수없이<br>꼼꼼하게 메모하는 퍼블리셔</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="color_box"></div>
-                  <div class="txt">
-                    <h3>따뜻한 베이지</h3>
-                    <p>포근한 봄에 태어나<br>따뜻한 마음으로 작업하는 퍼블리셔</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="color_box"></div>
-                  <div class="txt">
-                    <h3>신선한 그린</h3>
-                    <p>다양하고 신선한 작업물로<br>새로움을 그려나가는 퍼블리셔</p>
-                  </div>
-                </li>
-              </ul>
-            </li><!-- //.right -->
-          </ul>
-        </li>
-
-        <li class="bottom">
-          <h2>SKILL</h2>
-          <ul>
-            <li><img src="img/illustrator.png" alt="">Illustrator</li>
-            <li><img src="img/photoshop.png" alt="">Photoshop</li>
-            <li><img src="img/premierepro.png" alt="">PremierePro</li>
-            <li><img src="img/figma.png" alt="">Figma</li>
-            <li><img src="img/vscode.png" alt="">VSCode</li>
-            <li><img src="img/css.png" alt="">CSS</li>
-            <li><img src="img/html.png" alt="">HTML</li>
-            <li><img src="img/javascript.png" alt="">JavaScript</li>
-            <li><img src="img/react.png" alt="">React</li>
-            <li><img src="img/jquery.png" alt="">jQuery</li>
-          </ul>
-        </li>
-      </ul>
-    </section><!-- //.profile -->
-
-    <section class="A" id="A">
-      <div class="txt">
-        <h2><span>A</span>PUBLISHING</h2>
-      </div>
+    <section class="banner">
       <div class="con">
-        <div class="A_left">
-          <ul>
-            <li class="on">TOUS les JOURS</li>
-            <li>F:L</li>
-            <li>문화빛담</li>
-            <li>DRIVE RABBIT</li>
-          </ul>
-        </div><!-- //.A_left -->
-
-        <ul class="A_change">
-          <li class="tou on">
-            <ul>
-              <li class="A_middle">
-                <div class="site_img"></div>
-              </li><!-- //.A_middle -->
-
-              <li class="A_right">
-                <h3>TOUS <span>les</span> JOURS</h3>
-                <b>기여도</b>
-                <p>100% 개인작업 : 디자인+코딩</p>
-                <b>사용툴</b>
-                <ul>
-                  <li><img src="img/figma.png" alt=""></li>
-                  <li><img src="img/vscode.png" alt=""></li>
-                  <li><img src="img/css.png" alt=""></li>
-                  <li><img src="img/html.png" alt=""></li>
-                  <li><img src="img/javascript.png" alt=""></li>
-                </ul>
-                <div class="btn">
-                  <article class="overview">
-                    <a target="_blank"
-                      href="https://www.figma.com/proto/VRnR8JE4P856sH943JBQ9j/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?page-id=119%3A426&node-id=210-368&viewport=1382%2C1076%2C0.22&t=N9QRPvhW4jUmlEh5-1&scaling=min-zoom&content-scaling=fixed">Overview
-                    </a>
-                  </article>
-                  <article class="web">
-                    <a target="_blank" href="./touslesjours/index.html">Web
-                    </a>
-                  </article>
-                </div>
-              </li><!-- //.A_right -->
-            </ul>
-          </li><!-- //.tou -->
-
-          <li class="fl">
-            <ul>
-              <li class="A_middle">
-                <div class="site_img"></div>
-              </li><!-- //.A_middle -->
-
-              <li class="A_right">
-                <h3>F:L</h3>
-                <b>기여도</b>
-                <p>100% 개인작업 : 디자인+코딩</p>
-                <b>사용툴</b>
-                <ul>
-                  <li><img src="img/figma.png" alt=""></li>
-                  <li><img src="img/vscode.png" alt=""></li>
-                  <li><img src="img/css.png" alt=""></li>
-                  <li><img src="img/html.png" alt=""></li>
-                  <li><img src="img/javascript.png" alt=""></li>
-                </ul>
-
-                <div class="btn">
-                  <article class="overview">
-                    <a target="_blank" href="">Overview
-                    </a>
-                  </article>
-                  <article class="web">
-                    <a target="_blank" href="./fl/index.html">Web
-                    </a>
-                  </article>
-                </div>
-              </li><!-- //.A_right -->
-            </ul>
-          </li><!-- //.fl -->
-
-          <li class="kor">
-            <ul>
-              <li class="A_middle">
-                <div class="site_img"></div>
-              </li><!-- //.A_middle -->
-
-              <li class="A_right">
-                <h3>문화빛담</h3>
-                <b>기여도</b>
-                <p>팀플 100% : 기획+디자인+코딩</p>
-                <b>사용툴</b>
-                <ul>
-                  <li><img src="img/figma.png" alt=""></li>
-                  <li><img src="img/vscode.png" alt=""></li>
-                  <li><img src="img/css.png" alt=""></li>
-                  <li><img src="img/html.png" alt=""></li>
-                  <li><img src="img/javascript.png" alt=""></li>
-                </ul>
-
-                <div class="btn">
-                  <article class="overview">
-                    <a target="_blank"
-                      href="https://www.figma.com/proto/VRnR8JE4P856sH943JBQ9j/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?page-id=119%3A426&node-id=210-18879&viewport=1382%2C1076%2C0.22&t=N9QRPvhW4jUmlEh5-1&scaling=min-zoom&content-scaling=fixed">Overview
-                    </a>
-                  </article>
-                  <article class="web">
-                    <a target="_blank" href="./moonhwa/index.html">Web
-                    </a>
-                  </article>
-                </div>
-              </li><!-- //.A_right -->
-            </ul>
-          </li><!-- //.kor -->
-
-          <li class="driv">
-            <ul>
-              <li class="A_middle">
-                <div class="site_img"></div>
-              </li><!-- //.A_middle -->
-
-              <li class="A_right">
-                <h3>DRIVE RABBIT</h3>
-                <b>기여도</b>
-                <p>100% 개인작업 : 디자인+코딩</p>
-                <b>사용툴</b>
-                <ul>
-                  <li><img src="img/illustrator.png" alt=""></li>
-                  <li><img src="img/photoshop.png" alt=""></li>
-                  <li><img src="img/figma.png" alt=""></li>
-                  <li><img src="img/vscode.png" alt=""></li>
-                  <li><img src="img/css.png" alt=""></li>
-                  <li><img src="img/html.png" alt=""></li>
-                  <li><img src="img/javascript.png" alt=""></li>
-                </ul>
-
-                <div class="btn">
-                  <article class="overview">
-                    <a target="_blank" href="./drive.html">Overview
-                    </a>
-                  </article>
-                  <article class="web">
-                    <a target="_blank" href="">Web
-                    </a>
-                  </article>
-                </div>
-              </li><!-- //.A_right -->
-            </ul>
-          </li><!-- //.driv -->
-        </ul><!-- //A_change -->
-      </div>
-
-    </section><!-- //.A -->
-
-    <section class="B" id="B">
-      <h2 class="container"><span>B</span>UIUX</h2>
-      <div class="con swiper">
-        <ul class="swiper-wrapper">
-          <li class="meta swiper-slide">
-            <div class="container">
-              <div class="txt">
-                <h3>METAFIT</h3>
-                <p>해외 수출을 목표로 다양한 인종과 사이즈로 실측된 <br>
-                  3D 아바타에 원하는 상품을 입혀보며 <br>
-                  사용자에게 높은 만족도를 주기 위한 <br>
-                  패션플랫폼 어플리케이션</p>
-                <div class="more">
-                  <a target="_blank"
-                    href="https://www.figma.com/proto/VRnR8JE4P856sH943JBQ9j/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?page-id=119%3A426&node-id=210-19120&viewport=1382%2C1076%2C0.22&t=N9QRPvhW4jUmlEh5-1&scaling=min-zoom&content-scaling=fixed">More
-                    <i class="fa-solid fa-angles-right"></i>
-                  </a><!--  -->
-                </div><!-- //.more -->
-              </div><!-- //.txt -->
-              <div class="img"><img src="img/mobile2.png" alt=""></div>
-            </div>
-          </li><!-- //.meta -->
-
-          <li class="syl swiper-slide">
-            <div class="container">
-              <div class="left">
-                <div class="mobile">
-                  <div class="m_wrap">
-                    <img src="img/mobile_syl.png" alt="">
-                  </div>
-                </div>
-                <ul class="color">
-                  <li id="s"></li>
-                  <li id="o"></li>
-                  <li id="or"></li>
-                  <li id="b"></li>
-                  <li id="n"></li>
-                </ul>
-                <ul class="anim">
-                  <li><img src="img/ele.png" alt=""></li>
-                  <li><img src="img/squ.png" alt=""></li>
-                  <li><img src="img/cat.png" alt=""></li>
-                </ul>
-              </div><!-- //.left -->
-              <div class="txt">
-                <h3>Sylvanian Home</h3>
-                <p>Sylvanian Family와 관련된 <br>
-                  다양한 컨텐츠와 이벤트를 <br>
-                  집에서도 편하게 즐길 수 있도록 <br>
-                  사용자 기반으로 제작한 UXUI디자인</p>
-                <div class="more">
-                  <a target="_blank"
-                    href="https://www.figma.com/proto/VRnR8JE4P856sH943JBQ9j/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?page-id=119%3A426&node-id=210-19182&viewport=1382%2C1076%2C0.22&t=N9QRPvhW4jUmlEh5-1&scaling=min-zoom&content-scaling=fixed">More
-                    <i class="fa-solid fa-angles-right"></i></a>
-                </div>
-              </div><!-- //.txt -->
-            </div>
-          </li><!-- //.syl -->
-        </ul>
-
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </section>
-
-    <section class="C" id="C">
-      <div class="title">
-        <h2><span>C</span><br>CLONE <br>CODING</h2>
-      </div><!-- //.title -->
-      <ul>
-        <li class="clone1">
-          <div class="img_box"></div>
-          <div class="txt">
-            <h3><a target="_blank" href="clone/cube/index.html">CUBE
-                Animation <i class="fa-solid fa-chevron-right"></i></a></h3>
-            <p>메인페이지의 자동으로 돌아가는 모션과 <br>
-              내부에 들어가는 영상 작업 등 <br>
-              다양한 기능을 활용할 수 있어 제작한 코딩작업
-            </p>
-            <ul class="col_box">
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
-        </li><!-- //.clone1 -->
-        <li class="clone2">
-          <div class="txt">
-            <h3><a target="_blank" href="clone/clock/index.html">SWATCH
-                <i class="fa-solid fa-chevron-right"></i></a></h3>
-            <p>
-              슬라이딩하며 변경되는 배경이미지와 <br>
-              그 이미지의 움직임을 적용하는 기능을 <br>
-              익히고자 제작한 코딩작업
-            </p>
-            <ul class="col_box">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="img_box"></div>
-        </li><!-- //.clone2 -->
-        <li class="clone3">
-          <div class="img_box"></div>
-          <div class="txt">
-            <h3><a target="_blank" href="clone/mal/index.html">HOTEL LAGO <i class="fa-solid fa-chevron-right"></i></a>
-            </h3>
-            <p>
-              HOTEL LAGO DI GARDA 홈페이지의 <br>
-              크고 시원시원한 사각 레이아웃이 <br>
-              시각적 흥미를 돋우기에 제작한 코딩작업
-            </p>
-            <ul class="col_box">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
-
-        </li><!-- //.clone3 -->
-      </ul>
-    </section><!-- //.C -->
-
-    <section class="D" id="D">
-      <p>"디자인도 자신있는 신입 퍼블리셔 <span>강예주</span> 였습니다"</p>
-      <div class="D_bottom">
-        <h2>C<span>ONTACT</span></h2>
-        <ul>
-          <li><a href="https://www.instagram.com/yyejuu1?igsh=cTVvZzRiMWw5YWky&utm_source=qr">
-              <i class="fa-brands fa-instagram"></i>
-              <p>@yyejuu1</p>
-            </a>
-          </li>
-
+        <ul class="txt">
           <li>
-            <a href="mailto:yyejuu1@naver.com"><i class="fa-regular fa-envelope"></i>
-              <p>yyejuu1@naver.com</p>
+            갓 구운 빵을 위한<br>
+            뚜레쥬르의 하루를 만나보세요
+          </li>
+          <li>
+            건강하지만, 맛있어야,<br>
+            맛있지만, 건강해야,<br>
+            매일 먹을 수 있다는 평범한 원칙으로부터
+          </li>
+        </ul><!-- //.txt -->
+      </div><!-- //.con -->
+    </section><!-- //.banner -->
+
+    <section class="menu">
+      <div class="con">
+        <ul>
+          <li>
+            <a href="#">
+              <div class="img"></div>
+              <p>신제품</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="img"></div>
+              <p>빵</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="img"></div>
+              <p>케이크</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="img"></div>
+              <p>델리</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="img"></div>
+              <p>디저트&스낵</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="img"></div>
+              <p>음료</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="img"></div>
+              <p>선물</p>
             </a>
           </li>
         </ul>
-      </div><!-- //.D_bottom -->
-    </section><!-- //.D -->
+      </div><!-- //.con -->
+    </section><!-- //.menu -->
+
+    <section class="search">
+      <div class="con">
+        <form>
+          <input type="search" placeholder="검색어를 입력해주세요">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </form>
+
+        <ul class="tag">
+          <li><a href="#">#쁘띠티라미수</a></li>
+          <li><a href="#">#고단백현미식빵</a></li>
+          <li><a href="#">#고단백치킨&아보카도 샌드위치</a></li>
+          <li><a href="#">#앙녹차롤케이크</a></li>
+        </ul><!-- //.tag -->
+      </div><!-- //.con -->
+    </section><!-- //.search -->
+
+    <section class="combi">
+      <div class="con">
+        <div class="txt">
+          <h2>Combination</h2>
+          <p>뚜레쥬르 7월의 신메뉴를 <br>
+            최고의 조합으로 맛보는 방법!
+          </p>
+        </div><!-- //.txt -->
+        <div class="card">
+          <ul class="main">
+            <li><img src="img/cardmain.png" alt=""></li>
+            <li>누구든 까칠해질 수밖에 없는 오늘 같은 날씨,<br>
+              싱그럽고 상큼한 <span>샤인머스캣 스무디</span>
+            </li>
+            <li>까칠한<br>
+              <span>샤인머스캣 스무디</span>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-chevron-up"></i><br>
+                성분확인하기
+              </a>
+              <div class="hover_box">
+                <img src="img/cardmain_hover.png" alt="">
+              </div>
+            </li>
+          </ul><!-- //.main -->
+          <i class="fa-solid fa-plus"></i>
+          <ul class="mini">
+            <li class="mini1">
+              <div class="front">
+                <p>국내산팥 듬뿍 인절미 빙수</p>
+              </div>
+              <div class="back"></div>
+            </li>
+            <li class="mini2">
+              <div class="front">
+                <p>퐁신퐁신 우유 도넛</p>
+              </div>
+              <div class="back"></div>
+
+            </li>
+            <li class="mini3">
+              <div class="front">
+                <p>ㅋㅋㅋ 아이스박스</p>
+              </div>
+              <div class="back"></div>
+
+            </li>
+            <li class="mini4">
+              <div class="front">
+                <p>크림 가득 모카번</p>
+              </div>
+              <div class="back"></div>
+            </li>
+          </ul>
+        </div><!-- //.card -->
+      </div><!-- //.con -->
+    </section><!-- //.combi -->
+
+    <section class="prom">
+      <div class="con">
+        <div class="txt">
+          <h2>Promotion</h2>
+          <p>뚜레쥬르의 이벤트 프로모션을 확인하고<br>
+            다양한 혜택을 누려보세요!</p>
+        </div><!-- //.txt -->
+        <ul class="cou">
+          <li data-aos="fade-up" data-aos-duration="1500">
+            <div class="img_cou"></div>
+            <div class="txt_cou">
+              <h3>네이버페이로<br>
+                <b>원샷! 아샷추</b> 받아가자
+              </h3>
+              <div class="txt_box">
+                <span>일정</span>
+                <p>6.24(월) ~ 8.31(토)</p>
+                <span>내용</span>
+                <p>
+                  네이버페이로 1만원 이상 결제 시<br>
+                  원샷! 아샷추 0원 혜택가<br>
+                  *영수건당 1개 혜택 가능<br>
+                  *통신사 상시 혜택 중복 가능<br>
+                  *점포 재고소진 시 참여 불가
+                </p>
+              </div><!-- //.txt_box -->
+            </div>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="1500">
+            <div class="txt_cou">
+              <h3><b>뚜레쥬르 배달앱</b><br>
+                7월 할인 혜택</h3>
+              <div class="txt_box">
+                <span>일정</span>
+                <p>7.1(월) ~ 7.31(수)</p>
+                <span>내용</span>
+                <p>배달의 민족, 요기요, 땡겨요 배달앱<br>
+                  최대 6천원 할인 혜택<br>
+                  *브랜드 별 상이 내용 확인
+                </p>
+              </div><!-- //.txt_box -->
+            </div>
+            <div class="img_cou"></div>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="1500">
+            <div class="img_cou"></div>
+            <div class="txt_cou">
+              <h3><b>KT멤버십 VVIP, VIP</b><br>
+                생일을 축하드립니다!</h3>
+              <div class="txt_box">
+                <span>일정</span>
+                <p>1.1(월) ~ 12.31(화)</p>
+                <span>내용</span>
+                <p>VVIP회원 3만원 한도의 케이크 무료<br>
+                  VIP회원 2만원 이상 케이크 구매시 할인<br>
+                  *타 브랜드dhk 중복 이용 불가<br>
+                  *생일 당월 1회 한정, 유의사항 확인 요망
+                </p>
+              </div><!-- //.txt_box -->
+            </div>
+          </li>
+        </ul><!-- //.cou -->
+      </div><!-- //.con -->
+    </section><!-- //.prom -->
+
+    <section class="scroll">
+      <div class="con">
+        <ul class="tab1">
+          <li data-aos="fade-right" data-aos-duration="1500">
+            <div class="img"></div>
+            <div class="txt">
+              <h4>가까운<span>&nbsp;뚜레쥬르</span></h4>
+              <p>
+                내 주변의 가까운<br>
+                뚜레쥬르 매장을 찾아보세요!
+              </p>
+              <a href="#"><i class="fa-solid fa-plus"></i>자세히 보기</a>
+            </div>
+          </li>
+          <li data-aos="fade-right" data-aos-duration="1500">
+            <div class="img"></div>
+            <div class="txt">
+              <h4><span>뚜레쥬르</span>&nbsp;단체주문</h4>
+              <p>
+                기업체와 단체 주문에 관련된<br>
+                문의에 빠른 답변을 받아보세요!
+              </p>
+              <a href="#"><i class="fa-solid fa-plus"></i>자세히 보기</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="tab2">
+          <li data-aos="fade-left" data-aos-duration="1500">
+            <div class="img"></div>
+            <div class="txt">
+              <h4><span>뚜레쥬르</span>&nbsp;어플리케이션</h4>
+              <p>
+                뚜레쥬르 어플리케이션이 제공하는<br>
+                다양한 혜택을 만나보세요!
+              </p>
+              <a href="#"><i class="fa-solid fa-plus"></i>자세히 보기</a>
+            </div>
+          </li>
+          <li data-aos="fade-left" data-aos-duration="1500">
+            <div class="img"></div>
+            <div class="txt">
+              <h4>새로워진&nbsp;<span>뚜레쥬르</span></h4>
+              <p>
+                신선함을 가득 안고 새롭게 태어난<br>
+                뚜레쥬르를 만나보세요!
+              </p>
+              <a href="#"><i class="fa-solid fa-plus"></i>자세히 보기</a>
+            </div>
+          </li>
+        </ul>
+      </div><!-- //.con -->
+    </section><!-- //.scroll -->
   </main>
 
   <footer>
-    <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다. <br>
-      <i class="fa-regular fa-copyright"></i> 2024 <span>Kang Yeju</span>. All Rights Reserved.
-    </p>
+    <div class="con">
+      <div class="left">
+        <h1><a href="#"><img src="img/logo_g.png" alt=""></a></h1>
+        <div class="txt">
+          상호명:CJ푸드빌(주) 고객센터: 1577-0700 <br>
+          주소: (우)04555 서울시 중구 마른내로34 (초동 106-9번지) KT&G을지로타워 3, 9-11층 CJ푸드빌㈜ <br>
+          통신판매업종신고증 제 2011-서울중구-0771호 사업자정보확인 사업자등록번호: 312-81-42519 <br>
+          호스팅제공자: CJ올리브네트웍스(주) 개인정보보호책임자: 김재완 <br>
+          대표이사: 김찬호 대표 이메일: help_master@cj.net
+        </div>
+        <div class="copy">
+          COPYRIGHT 2024©CJ Foodville ALL RIGHT RESERVED.
+        </div>
+      </div><!-- //.left -->
+      <ul class="right">
+        <li><a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a></li>
+        <li><a href="#">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a></li>
+        <li><a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-truck-fast"></i>
+          </a></li>
+        <li><a href="#">
+            <i class="fa-brands fa-app-store"></i>
+          </a></li>
+        <li><a href="#">
+            <i class="fa-brands fa-google-play"></i>
+          </a></li>
+      </ul><!-- //. -->
+    </div>
   </footer>
-
 </body>
 
 </html>
